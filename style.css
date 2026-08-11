@@ -60,6 +60,7 @@ img { max-width: 100%; display: block; }
   grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
 }
 .portfolio__hero-inner { max-width: 560px; }
+.portfolio__hero-photo-wrap { position: relative; }
 .portfolio__hero-photo {
   position: relative;
   aspect-ratio: 4 / 5;
@@ -93,7 +94,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 860px) {
   .portfolio__hero-layout { grid-template-columns: 1fr; }
   .portfolio__hero-inner { max-width: 100%; }
-  .portfolio__hero-photo { max-width: 320px; margin: 0 auto; order: -1; }
+  .portfolio__hero-photo-wrap { max-width: 320px; margin: 0 auto; order: -1; }
 }
 .portfolio__hero-contour {
   position: absolute;
@@ -150,7 +151,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 56px;
+  gap: 120px;
   padding: 40px 0 8px;
   flex-wrap: wrap;
 }
