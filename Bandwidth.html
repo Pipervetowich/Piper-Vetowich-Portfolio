@@ -52,7 +52,7 @@
 
    <div class="portfolio__project-col">
         <div class="portfolio__glow" style="width:280px;height:280px;left:50%;top:140px;transform:translate(-50%,-50%);"></div>
-          <div class="portfolio__device-frame">
+          <div class="portfolio__device-frame" style="height:600px;">
             <svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <clipPath id="phoneScreenClip">
@@ -111,10 +111,50 @@
     </div>
 
     <!-- SCREEN PREVIEW ROW -->
-    <div class="portfolio__gallery-grid" style="margin-bottom:80px;">
-      <div class="portfolio__gallery-item"><img src="images/home-screen.jpg" alt="Band Width home screen showing upcoming shows and followed artists" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/discover-screen.jpg" alt="Discover screen for browsing nearby shows by genre and date" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/show-detail-screen.jpg" alt="Show detail screen with venue, lineup, and RSVP" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+    <div style="display:flex;align-items:flex-end;justify-content:center;gap:20px;margin:0 calc(50% - 50vw) 80px;flex-wrap:nowrap;width:100vw;">
+
+      <!-- Home -->
+      <div style="height:600px;">
+        <svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;">
+          <defs>
+            <clipPath id="phoneScreenClipHome">
+              <rect x="18" y="18" width="150" height="290" rx="18" />
+            </clipPath>
+          </defs>
+          <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+          <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+          <image href="Home.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipHome)" />
+        </svg>
+      </div>
+
+      <!-- Discover -->
+      <div style="height:600px;">
+        <svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;">
+          <defs>
+            <clipPath id="phoneScreenClipDiscover">
+              <rect x="18" y="18" width="150" height="290" rx="18" />
+            </clipPath>
+          </defs>
+          <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+          <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+          <image href="Discover.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipDiscover)" />
+        </svg>
+      </div>
+
+      <!-- Show -->
+      <div style="height:600px;">
+        <svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;">
+          <defs>
+            <clipPath id="phoneScreenClipShow">
+              <rect x="18" y="18" width="150" height="290" rx="18" />
+            </clipPath>
+          </defs>
+          <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+          <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+          <image href="Show.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipShow)" />
+        </svg>
+      </div>
+
     </div>
 
     <!-- PHASE 1 -->
@@ -172,13 +212,43 @@
     <div class="portfolio__case-block">
       <h2>Key screens</h2>
     </div>
-    <div class="portfolio__gallery-grid" style="margin-bottom:72px;">
-      <div class="portfolio__gallery-item"><img src="images/login-screen.jpg" alt="Welcome and login screen with guest option" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/looking-for-screen.jpg" alt="Looking For community board connecting bands and hosts" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/shows-manager-screen.jpg" alt="Shows manager grid for editing and deleting a band's shows" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/host-profile-screen.jpg" alt="Host profile screen showing venue details and upcoming shows" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/filters-screen.jpg" alt="Advanced filters for browsing shows by price, age, and type" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/notifications-screen.jpg" alt="Notifications card showing show updates from followed artists" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+    <div class="portfolio__gallery-grid" style="margin-bottom:72px;background:none;grid-template-columns:repeat(3,1fr);align-items:end;">
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Welcome and login screen with guest option">
+        <defs><clipPath id="phoneScreenClipLogin"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Band-Profile.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipLogin)" />
+      </svg></div>
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Looking For community board connecting bands and hosts">
+        <defs><clipPath id="phoneScreenClipLookingFor"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Bands.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipLookingFor)" />
+      </svg></div>
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Shows manager grid for editing and deleting a band's shows">
+        <defs><clipPath id="phoneScreenClipShowsManager"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Show-Manager.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipShowsManager)" />
+      </svg></div>
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Host profile screen showing venue details and upcoming shows">
+        <defs><clipPath id="phoneScreenClipHostProfile"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Show-Edit.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipHostProfile)" />
+      </svg></div>
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Advanced filters for browsing shows by price, age, and type">
+        <defs><clipPath id="phoneScreenClipFilters"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Filter.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipFilters)" />
+      </svg></div>
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Notifications card showing show updates from followed artists">
+        <defs><clipPath id="phoneScreenClipNotifications"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Looking-For2.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipNotifications)" />
+      </svg></div>
     </div>
 
     <!-- PHASE 2 -->
@@ -222,9 +292,19 @@
       </p>
     </div>
 
-    <div class="portfolio__before-after">
-      <div class="portfolio__gallery-item"><img src="images/before-tags.jpg" alt="Before: new show form with no genre or fit information visible" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
-      <div class="portfolio__gallery-item"><img src="images/after-tags.jpg" alt="After: tags auto-fill from the tagged band, surfacing genre fit immediately" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+    <div class="portfolio__before-after" style="align-items:flex-end;justify-content:center;">
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="Before: new show form with no genre or fit information visible">
+        <defs><clipPath id="phoneScreenClipBefore"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Wireframe.jpg" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipBefore)" />
+      </svg></div>
+      <div style="height:600px;"><svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg" style="height:100%;width:auto;margin:0 auto;display:block;" role="img" aria-label="After: tags auto-fill from the tagged band, surfacing genre fit immediately">
+        <defs><clipPath id="phoneScreenClipAfter"><rect x="18" y="18" width="150" height="290" rx="18" /></clipPath></defs>
+        <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+        <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+        <image href="Filter.PNG" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClipAfter)" />
+      </svg></div>
     </div>
 
     <div class="portfolio__case-block">
@@ -288,11 +368,6 @@
       </div>
     </div>
     
-    <div class="portfolio__case-nav">
-      <a href="index.html#work">← Back to work</a>
-      <a href="brighten-your-being.html">Next project: Brighten Your Being →</a>
-    </div>
-  </div>
 </section>
 
 <footer class="portfolio__footer">
