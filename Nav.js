@@ -43,10 +43,6 @@
           Recent CU Boulder graduate building research-driven interfaces, from wireframe
           through working front end.
         </p>
-        <div class="portfolio__hero-actions">
-          <a class="portfolio__btn portfolio__btn--primary" href="#work">See the work ↓</a>
-          <a class="portfolio__btn portfolio__btn--ghost" href="contact.html">Get in touch</a>
-        </div>
       </div>
       <div class="portfolio__hero-photo">
         <span>Add photo</span>
