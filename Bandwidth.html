@@ -9,6 +9,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<style>
+  /* Stretch case-study text blocks to the full content width */
+  .portfolio__case-block,
+  .portfolio__persona-grid,
+  .portfolio__system-panel,
+  .portfolio__reflection-grid {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .portfolio__case-block > p,
+  .portfolio__case-block > ul {
+    max-width: 100% !important;
+  }
+</style>
 </head>
 <body>
 
@@ -32,28 +46,38 @@
     <div class="portfolio__case-hero">
       <h1 class="portfolio__case-title">Band Width</h1>
       <p class="portfolio__case-sub">
-        A React Native app that connects local musicians, fans, and venue hosts. Designed to make it easier to book gigs, discover live shows nearby, and
-        grow a following.
+        A React Native app that connects local musicians, fans, and venue hosts.
       </p>
     </div>
 
-    <div class="portfolio__case-banner">
-      <span>Add hero image or app screenshot</span>
-    </div>
-
+   <div class="portfolio__project-col">
+        <div class="portfolio__glow" style="width:280px;height:280px;left:50%;top:140px;transform:translate(-50%,-50%);"></div>
+          <div class="portfolio__device-frame">
+            <svg class="portfolio__phone" viewBox="0 0 186 326" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <clipPath id="phoneScreenClip">
+                  <rect x="18" y="18" width="150" height="290" rx="18" />
+                </clipPath>
+              </defs>
+              <rect class="portfolio__phone-frame" x="4" y="4" width="178" height="318" rx="28" />
+              <rect class="portfolio__phone-screen-fill" x="18" y="18" width="150" height="290" rx="18" />
+          
+                 <image href="bandwidth-phone.jpg" x="18" y="18" width="150" height="290" preserveAspectRatio="xMidYMid slice" clip-path="url(#phoneScreenClip)" />
+            </svg>
+          </div>
     <!-- OVERVIEW -->
     <div class="portfolio__case-block">
       <h2>Overview</h2>
       <p>
-        As the sole UX/UI designer on Band Width, I led the project from first
-        interview to final prototype over a 10-week sprint — researching how
+        As the UX/UI designer on Band Width, I led the project from
+        interview to final prototype over a school year. I conducted research on how
         musicians, fans, and venue hosts currently find and book live music,
-        then designing a single app that serves all three.
+        then designeda single app that serves all three.
       </p>
       <p>
         Because Band Width has to work for three very different kinds of users
         at once, my role centered on <strong>reconciling competing needs</strong>
-        without letting the product feel like three apps stitched together —
+        without letting the product feel like three apps stitched together. I focused on a shared visual language
         while keeping the experience <strong>fast, mobile-first, and low-friction</strong>
         for people booking or discovering a show on the go.
       </p>
@@ -70,7 +94,7 @@
       </p>
       <p>
         Band Width sets out to close that gap with one app that serves all three
-        groups — a shared home base for discovering, booking, and promoting live
+        groups, basically a shared home base for discovering, booking, and promoting live
         music.
       </p>
     </div>
@@ -78,20 +102,19 @@
     <!-- MY ROLE -->
     <div class="portfolio__case-block">
       <h2>My role</h2>
-      <p>As the only designer on the project, I owned the process end to end:</p>
       <ul>
-        <li><strong>Led user research</strong> — recruited and interviewed musicians, fans, and venue hosts to understand each group's booking and discovery habits.</li>
-        <li><strong>Mapped three user flows</strong> — designed distinct but interoperable experiences for musicians, fans, and hosts within one shared app.</li>
-        <li><strong>Built the prototype</strong> — took wireframes to a high-fidelity, testable Figma prototype across 40+ screens.</li>
-        <li><strong>Ran usability testing</strong> — planned and moderated sessions with each user type and iterated on booking and discovery flows.</li>
+        <li><strong>Led user research</strong>: recruited and interviewed musicians, fans, and venue hosts to understand each group's booking and discovery habits.</li>
+        <li><strong>Mapped three user flows</strong>: designed distinct but interoperable experiences for musicians, fans, and hosts within one shared app.</li>
+        <li><strong>Built the prototype</strong>: took wireframes to a high-fidelity, testable Figma prototype across 40+ screens.</li>
+        <li><strong>Ran usability testing</strong>:planned and moderated sessions with each user type and iterated on booking and discovery flows.</li>
       </ul>
     </div>
 
     <!-- SCREEN PREVIEW ROW -->
     <div class="portfolio__gallery-grid" style="margin-bottom:80px;">
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
+      <div class="portfolio__gallery-item"><img src="images/home-screen.jpg" alt="Band Width home screen showing upcoming shows and followed artists" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/discover-screen.jpg" alt="Discover screen for browsing nearby shows by genre and date" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/show-detail-screen.jpg" alt="Show detail screen with venue, lineup, and RSVP" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
     </div>
 
     <!-- PHASE 1 -->
@@ -104,33 +127,9 @@
       <p>
         Booking a gig, discovering a show, and running a venue's calendar are three
         completely different jobs-to-be-done. Before sketching anything, I needed to
-        understand how each group currently gets by — and where the friction was worst.
+        understand how each group currently gets by and where the friction was worst.
       </p>
     </div>
-
-    <div class="portfolio__stats-row portfolio__stats-row--plain portfolio__stats-row--wide" style="margin-bottom:64px;">
-      <div class="portfolio__stat">
-        <div class="portfolio__stat-num">27+</div>
-        <div class="portfolio__stat-label">Musicians &amp; fans surveyed</div>
-      </div>
-      <div class="portfolio__stat">
-        <div class="portfolio__stat-num">3</div>
-        <div class="portfolio__stat-label">Distinct user flows</div>
-      </div>
-      <div class="portfolio__stat">
-        <div class="portfolio__stat-num">40+</div>
-        <div class="portfolio__stat-label">Figma screens mapped</div>
-      </div>
-      <div class="portfolio__stat">
-        <div class="portfolio__stat-num">10 wks</div>
-        <div class="portfolio__stat-label">Design sprint</div>
-      </div>
-    </div>
-
-    <div class="portfolio__case-block">
-      <p><strong>Based on these findings...</strong> three clear user needs emerged, one for each audience.</p>
-    </div>
-
     <div class="portfolio__persona-grid">
       <div>
         <h3>As a musician,</h3>
@@ -174,12 +173,12 @@
       <h2>Key screens</h2>
     </div>
     <div class="portfolio__gallery-grid" style="margin-bottom:72px;">
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add screen</span></div>
+      <div class="portfolio__gallery-item"><img src="images/login-screen.jpg" alt="Welcome and login screen with guest option" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/looking-for-screen.jpg" alt="Looking For community board connecting bands and hosts" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/shows-manager-screen.jpg" alt="Shows manager grid for editing and deleting a band's shows" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/host-profile-screen.jpg" alt="Host profile screen showing venue details and upcoming shows" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/filters-screen.jpg" alt="Advanced filters for browsing shows by price, age, and type" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/notifications-screen.jpg" alt="Notifications card showing show updates from followed artists" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
     </div>
 
     <!-- PHASE 2 -->
@@ -192,7 +191,7 @@
       <p>Ran moderated sessions with each user type, then refined booking and discovery flows based on where testers hesitated.</p>
       <ul>
         <li>Fans moved through show discovery with almost no guidance needed.</li>
-        <li>Musicians hesitated at the booking-request step — the venue's "fit" criteria weren't visible up front.</li>
+        <li>Musicians hesitated at the booking-request step. The venue's "fit" criteria weren't visible up front.</li>
       </ul>
     </div>
 
@@ -224,15 +223,15 @@
     </div>
 
     <div class="portfolio__before-after">
-      <div class="portfolio__gallery-item"><span>Add "before" screen</span></div>
-      <div class="portfolio__gallery-item"><span>Add "after" screen</span></div>
+      <div class="portfolio__gallery-item"><img src="images/before-tags.jpg" alt="Before: new show form with no genre or fit information visible" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div class="portfolio__gallery-item"><img src="images/after-tags.jpg" alt="After: tags auto-fill from the tagged band, surfacing genre fit immediately" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
     </div>
 
     <div class="portfolio__case-block">
       <h2>Building for scale</h2>
       <p>
         Supporting three user roles pushed the component library further than a
-        typical single-flow app would have — every component needed to flex across
+        typical single-flow app would have. Every component needed to flex across
         contexts without losing consistency.
       </p>
     </div>
@@ -242,19 +241,25 @@
         <div>
           <span class="portfolio__system-card-title">Brand colors</span>
           <div class="portfolio__system-swatches">
-            <div class="portfolio__system-swatch"></div>
-            <div class="portfolio__system-swatch"></div>
-            <div class="portfolio__system-swatch"></div>
-            <div class="portfolio__system-swatch"></div>
+            <div class="portfolio__system-swatch" style="background:#9D4EDD;" title="Primary purple #9D4EDD"></div>
+            <div class="portfolio__system-swatch" style="background:#1E1E1E;" title="Near-black #1E1E1E"></div>
+            <div class="portfolio__system-swatch" style="background:#F5F5F5;" title="Off-white #F5F5F5"></div>
+            <div class="portfolio__system-swatch" style="background:#D946EF;" title="Neon accent #D946EF"></div>
           </div>
         </div>
         <div>
           <span class="portfolio__system-card-title">Typography</span>
-          <div class="portfolio__system-block">Add type scale</div>
+          <div class="portfolio__system-block">
+            <p style="font-family:'Fraunces',serif;font-size:20px;margin:0 0 6px;">Fraunces: Headlines</p>
+            <p style="font-family:'Inter',sans-serif;font-size:15px;margin:0 0 6px;">Inter: UI &amp; body copy</p>
+            <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;margin:0;">IBM Plex Mono: timestamps &amp; data</p>
+          </div>
         </div>
         <div>
           <span class="portfolio__system-card-title">Components</span>
-          <div class="portfolio__system-block">Add component sheet</div>
+          <div class="portfolio__system-block">
+            <p style="margin:0 0 6px;">Show card · Genre/tag chip · Role toggle (Fan/Band/Host) · Bottom tab bar · Filter sheet · Notification row</p>
+          </div>
         </div>
       </div>
     </div>
